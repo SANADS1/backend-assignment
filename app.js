@@ -1,4 +1,4 @@
-//Load HTTP module
+/*Load HTTP module
 const http = require("http");
 
 const express = require('express');
@@ -22,4 +22,18 @@ app.post('/sample-post', (req, res) => {
 
 
 const server = http.createServer(app)
-module.exports = server
+module.exports = server*/
+
+const fs = require('fs');
+
+// writeFile function with filename, content and callback function
+fs.writeFile('Backendskypelink.txt', 'meeting link code', function (err) {
+   if (err) throw err;
+   console.log('File is created successfully.');
+ });
+
+
+ fs.appendFile('covid191.txt', 'covid assignment', function (err) {
+   if (err) throw err;
+   console.log('File is created successfully.');
+ }); 
