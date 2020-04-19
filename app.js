@@ -1,4 +1,4 @@
-// //Load HTTP module
+//Load HTTP module
 const http = require("http");
 
 const express = require('express');
@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 
 app.use(bodyParser.urlencoded({ extended: false }))
  
-// parse application/json
+//parse application/json
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
