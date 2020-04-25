@@ -1,0 +1,42 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title #{title}
+    link(rel="stylesheet" href="/bootstrap/bootstrap.min.css")
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-dark
+      a.navbar-brand.text-light(href='#{index}') Facebook Clone
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+        <nav class="navbar navbar-light bg-light">
+
+      input.search(
+        type='text'
+        name='search'
+        placeholder='Search now'
+      )  
+      
+</nav>
+
+  .container
+  .col-md-3
+    form.navbar-form(role='search')
+      .input-group.add-on
+        input.form-control#srch-term(placeholder='Search' name='srch-term' type='text')
+
+      .collapse.navbar-collapse(id='navbarSupportedContent')
+      ul.navbar-nav.mr-auto
+        li.nav-item.active
+          a.nav-link.text-light(href='/home') Home
+        li.nav-item
+          a.nav-link.text-light(href='/food-courts') Profile
+        li.nav-item
+          a.nav-link.text-light(href='/parking') Notification
+        //-li.nav-item
+          a.nav-link.text-light(href='/places') search
+      //- ul.navbar-nav.float-right
+      //-   li.nav-item
+      //-     a.nav-link.text-light(href='/login') 
+
+    block content
