@@ -3,6 +3,15 @@ module.exports = {
       return res.send(req.params.username);
   },
   userHome(req, res){
-    res.render('index.pug', { greeting: 'Hello World' });
+    res.render(
+      'index.pug', 
+      { title: 'Facebook Clone',
+        home:'home',
+        greeting: 'Hello World',
+        profile: 'profile',
+        notification: 'notification',
+        search: 'search',
+        index: 'index'
+     });
   }
 }

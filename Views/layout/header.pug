@@ -18,15 +18,14 @@ html(lang='en')
       .collapse.navbar-collapse(id='navbarSupportedContent')
       ul.navbar-nav.mr-auto
         li.nav-item.active
-          a.nav-link.text-light(href= '/') Home
+          a.nav-link.text-light(href= '/home') Home
         li.nav-item
           a.nav-link.text-light(class = 'button' href='/food-courts') Profile
         li.nav-item
           a.nav-link.text-light(href='/parking') Notification
+        
+      ul.navbar-nav.float-right
         li.nav-item
-          a.nav-link.text-light(href='/places') search
-      //- ul.navbar-nav.float-right
-      //-   li.nav-item
-      //-     a.nav-link.text-light(href='/login') 
+          a.nav-link.text-light(href='/login') Login
 
     block content

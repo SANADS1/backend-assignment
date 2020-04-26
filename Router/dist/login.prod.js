@@ -1,0 +1,1 @@
+"use strict";var express=require("express"),loginRoute=express.Router();loginRoute.route("/").get(function(e,o){o.render("login.pug",{title:"Facebook Clone",profile:"profile",notification:"notification",search:"search",index:"index",home:"home"})}),module.exports=loginRoute;

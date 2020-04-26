@@ -10,21 +10,12 @@ html(lang='en')
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
         <nav class="navbar navbar-light bg-light">
-
       input.search(
         type='text'
         name='search'
         placeholder='Search now'
       )  
       
-</nav>
-
-  .container
-  .col-md-3
-    form.navbar-form(role='search')
-      .input-group.add-on
-        input.form-control#srch-term(placeholder='Search' name='srch-term' type='text')
-
       .collapse.navbar-collapse(id='navbarSupportedContent')
       ul.navbar-nav.mr-auto
         li.nav-item.active
@@ -33,10 +24,8 @@ html(lang='en')
           a.nav-link.text-light(href='/food-courts') Profile
         li.nav-item
           a.nav-link.text-light(href='/parking') Notification
-        //-li.nav-item
-          a.nav-link.text-light(href='/places') search
-      //- ul.navbar-nav.float-right
-      //-   li.nav-item
-      //-     a.nav-link.text-light(href='/login') 
+      ul.navbar-nav.float-right
+        li.nav-item
+        a.nav-link.text-light(href='/login') Login
 
     block content

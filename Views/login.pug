@@ -1,0 +1,64 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title #{title}
+    link(rel="stylesheet" href="/bootstrap/bootstrap.min.css")
+  body
+    
+      
+      //-button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+        <nav class="navbar navbar-light bg-light">
+        
+      
+      //-.collapse.navbar-collapse(id='navbarSupportedContent')
+     
+        
+
+
+block content
+
+
+
+
+
+
+
+
+
+
+
+
+nav.navbar.navbar-light.bg-light
+  a.navbar-brand(href='/index') Facebook Clone
+  form.form-inline
+    input.form-control.mr-sm-2(type='email' placeholder='Enter your email' aria-label='Email')
+    input.form-control.mr-sm-2(type='password' placeholder='Password' aria-label='Password')
+    button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Login
+
+
+block content
+  main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2.text-center Sign Up
+
+        // register form
+        form(method='POST' action='/register').m-5
+          div.form-group
+            label(for='name') Name:
+            input#name.form-control(type='text' placeholder='first and last' name='name')
+          div.form-group
+            label(for='email') Email:
+            input#email.form-control(type='email' placeholder='name@email.com' name='email')
+          div.form-group
+            label(for='Phone') Phone:
+            input#favoriteBook.form-control(type='tel' placeholder='Phone' name='phone')
+          div.form-group
+            label(for='pw') Password:
+            input#pw.form-control(type='password' name='password')
+          button.btn.btn-primary(type='submit') Sign up
+
+
+          

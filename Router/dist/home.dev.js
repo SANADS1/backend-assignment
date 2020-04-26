@@ -2,8 +2,8 @@
 
 var express = require('express');
 
-var homeRouter = express.Router();
-homeRouter.route('/').get(function (req, res) {
+var homeRoute = express.Router();
+homeRoute.route('/').get(function (req, res) {
   res.render('home.pug', {
     title: 'Facebook Clone',
     profile: 'profile',
@@ -12,4 +12,4 @@ homeRouter.route('/').get(function (req, res) {
     index: 'index'
   });
 });
-module.exports = homeRouter;
+module.exports = homeRoute;
