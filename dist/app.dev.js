@@ -11,11 +11,9 @@ var bodyParser = require('body-parser');
 
 var userRoute = require('./Router/user');
 
-var adminRoute = require('./Router/admin');
+var adminRoute = require('./Router/admin'); //const  homeRoute = require('./Router/home');
+//const  loginRoute = require('./Router/login');
 
-var homeRoute = require('./Router/home');
-
-var loginRoute = require('./Router/login');
 
 app.use(bodyParser.urlencoded({
   extended: false
@@ -27,8 +25,8 @@ app.use(bodyParser.json());
 app.set('views', './Views');
 app.set('view engine', 'pug');
 app.use('/', userRoute);
-app.use('/admin', adminRoute);
-app.use('/home', homeRoute);
-app.use('/login', loginRoute);
+app.use('/admin', adminRoute); //app.use('/home', homeRoute);
+//app.use('/login', loginRoute);
+
 var server = http.createServer(app);
 module.exports = server;

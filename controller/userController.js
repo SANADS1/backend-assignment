@@ -13,5 +13,35 @@ module.exports = {
         search: 'search',
         index: 'index'
      });
+  },
+  home(req, res){
+    res.render(
+      'home.pug',
+      { title: 'Facebook Clone',
+        home:'home',
+        greeting: 'Hello World',
+        profile: 'profile',
+        notification: 'notification',
+        search: 'search',
+        index: 'index'
+     }
+
+    );
+  
+  },
+  login(req, res){
+    res.render(
+      'login.pug',
+      { title: 'Facebook Clone',
+        home:'home',
+        greeting: 'Hello World',
+        profile: 'profile',
+        notification: 'notification',
+        search: 'search',
+        index: 'index'
+     }
+     
+    );
+  
   }
 }

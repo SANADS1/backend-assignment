@@ -6,8 +6,8 @@ const app = express();
 const bodyParser = require('body-parser')
 const userRoute = require('./Router/user');
 const adminRoute = require('./Router/admin');
-const  homeRoute = require('./Router/home');
-const  loginRoute = require('./Router/login');
+//const  homeRoute = require('./Router/home');
+//const  loginRoute = require('./Router/login');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(__dirname + '/Public'));
@@ -21,8 +21,8 @@ app.set('view engine', 'pug');
 
 app.use('/', userRoute);
 app.use('/admin', adminRoute);
-app.use('/home', homeRoute);
-app.use('/login', loginRoute);
+//app.use('/home', homeRoute);
+//app.use('/login', loginRoute);
 
 
 const server = http.createServer(app)
