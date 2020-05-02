@@ -1,0 +1,12 @@
+extends ./layout/header.pug
+block content
+
+  div.container
+    h2.m-5.text-center Welcome #{User || "Aboo"}
+    .container
+      form.form-signin.m-5
+        h2.form-signin-heading.pb-5 Make a new Post
+        label.sr-only(for='inputEmail') Post
+        textarea.form-control#exampleFormControlTextarea1(name="newPost", cols="30", rows="10"  placeholder='Write a new Post' required='' autofocus='')
+        
+        button.btn.btn-lg.btn-primary.m-5(type='submit') Post
