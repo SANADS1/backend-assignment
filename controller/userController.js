@@ -43,5 +43,9 @@ module.exports = {
      
     );
   
+  },
+  createUser(req, res){
+    const { username, email, phone, password} = req.body;
+    console.log(username,email, password, phone);
   }
 }
