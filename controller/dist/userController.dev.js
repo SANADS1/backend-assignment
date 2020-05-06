@@ -39,10 +39,10 @@ module.exports = {
   },
   createUser: function createUser(req, res) {
     var _req$body = req.body,
-        username = _req$body.username,
+        name = _req$body.name,
         email = _req$body.email,
         phone = _req$body.phone,
         password = _req$body.password;
-    console.log(username, email, password, phone);
+    console.log(name, email, password, phone);
   }
 };
