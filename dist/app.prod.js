@@ -1,0 +1,1 @@
+"use strict";var fs=require("fs");fs.writeFile("Backendskypelink.txt","meeting link code",function(e){if(e)throw e;console.log("File is created successfully.")}),fs.appendFile("covid191.txt","covid assignment",function(e){if(e)throw e;console.log("File is created successfully.")});

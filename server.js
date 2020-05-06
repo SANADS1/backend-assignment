@@ -1,4 +1,4 @@
-const server = require('./app');
+const server = require('./app').default;
 const port = 5555;
 
 
